@@ -1,0 +1,18 @@
+{% extends "base.html" %}
+
+{% block content %}
+<form class="form-signin" method="post" action="/login">
+  <h1 class="h3 mb-3 font-weight-normal">Please sign in</h1>
+  {% if error %}
+  <div class="alert alert-danger" role="alert">
+    Incorrect user ID or password.
+  </div>
+  {% endif %}
+  <label for="inputEmail" class="sr-only">User ID</label>
+  <input name="username" type="text" id="inputEmail" class="form-control" placeholder="User ID" required autofocus>
+  <label for="inputPassword" class="sr-only">Password</label>
+  <input name="password" type="password" id="inputPassword" class="form-control" placeholder="Password" required>
+  <button class="btn btn-lg btn-primary btn-block" type="submit">Sign in</button>
+  <a href="/signup">Create a new account</a>
+</form>
+{% endblock %}

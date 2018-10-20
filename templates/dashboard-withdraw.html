@@ -1,0 +1,41 @@
+{% extends "dashboard.html" %}
+
+{% block dashboard %}
+
+<h1>Withdraw</h1>
+<div class="pt-3 pb-2 mb-3 border-bottom">
+  <form method="post" action="/dashboard/withdraw">
+    <div class="form-group">
+      <label for="amount">Withdrawal amount</label>
+      <input type="number" class="form-control" id="amount" name="amount" aria-describedby="amount-help" placeholder="Enter an amount of withdraw">
+      <small id="amount-help" class="form-text text-muted">The money box should have {{ bank }} yen.</small>
+    </div>
+    <button type="submit" class="btn btn-primary">Submit</button>
+  </form>
+</div>
+
+<h2>History</h2>
+<div class="table-responsive">
+  <table class="table table-striped table-sm">
+    <thead>
+      <tr>
+        <th>#</th>
+        <th>Date / Time</th>
+        <th>User</th>
+        <th>Amount (JPY)</th>
+      </tr>
+    </thead>
+    <tbody>
+      {% for withdraw in withdraws %}
+      <tr>
+        <td>{{ loop.index }}</td>
+        <td>{{ withdraw.timestamp }}</td>
+        <td>{{ withdraw.user }}</td>
+        <td class="text-right">{{ withdraw.amount }}</td>
+      </tr>
+      {% endfor %}
+    </tbody>
+  </table>
+</div>
+  
+{% endblock %}

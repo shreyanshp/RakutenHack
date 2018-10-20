@@ -1,0 +1,38 @@
+{% extends "base.html" %}
+
+{% block content %}
+
+<form class="form-signin" data-toggle="validator" method="post" action="/register_user">
+  <h1 class="h3 mb-3 font-weight-normal">Register a new user</h1>
+
+  <div class="alert alert-danger" role="alert">
+    Do not reuse a password that you have used in another service because communication with this service is not encrypted (hosted on http) at this moment.
+  </div>    
+
+  {% if message == 'exist' %}
+  <div class="alert alert-warning" role="alert">
+    The user already exists.
+  </div>
+  {% endif %}
+  <div class="form-group">
+      <label for="inputUserName" class="sr-only">Full name</label>
+      <input name="fullname" type="text" id="inputUserName" class="form-control" placeholder="Full name" required>
+  </div>
+  <div class="form-group">
+    <label for="inputUserID" class="sr-only">User name</label>
+    <input name="username" type="text" id="inputUserID" class="form-control" placeholder="User name (ID)" required>
+  </div>
+  <div class="form-group">
+    <label for="inputNewPassword" class="sr-only">Password</label>
+    <input name="password" type="password" id="inputNewPassword" data-minlength="6" class="form-control" placeholder="Password" required>
+    <span class="help-block">No less than six letters</span>
+  </div>
+  <div class="form-group">
+    <label for="inputNewPasswordConfirm" class="sr-only">Password (confirmation)</label>
+    <input name="password2" type="password" id="inputNewPasswordConfirm" class="form-control" data-match="#inputNewPassword" data-match-error="Incorrect passwords" placeholder="Password (confirmation)" required>
+    <div class="help-block with-errors"></div>
+  </div>
+  <button class="btn btn-lg btn-primary btn-block" type="submit">Sign up</button>
+
+</form>
+{% endblock %}

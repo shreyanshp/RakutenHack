@@ -1,0 +1,36 @@
+{% extends "base.html" %}
+
+{% block content %}
+<div class="container-fluid">
+  <div class="row">
+    <nav class="col-md-2 d-none d-md-block bg-light sidebar">
+      <div class="sidebar-sticky">
+        <ul class="nav flex-column">
+          <li class="nav-item">
+            <a class="nav-link active" href="/dashboard/item">
+              <span data-feather="database"></span>
+              Item <span class="sr-only">(current)</span>
+            </a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="/dashboard/catalog">
+              <span data-feather="refresh-cw"></span>
+              Catalog
+            </a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="/dashboard/withdraw">
+              <span data-feather="dollar-sign"></span>
+              Withdraw
+            </a>
+          </li>
+        </ul>
+      </div>
+    </nav>
+
+    <main role="main" class="col-md-9 ml-sm-auto col-lg-10 px-4">
+      {% block dashboard %}{% endblock %}
+    </main>
+  </div>
+</div>
+{% endblock %}

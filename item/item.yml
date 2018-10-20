@@ -1,0 +1,298 @@
+- title: Tea
+  id: tea
+  goods:
+    - name: "Ice coffee"
+      jan: 4901201223693
+      price: 100
+      cost: 1010
+      divide: 12
+    - name: "Green tea"
+      jan: 4973450160074
+      price: 70
+      cost: 61
+      divide: 1
+    - name: "Kasane tea"
+      jan: 4973450127367
+      price: 70
+      cost: 61
+      divide: 1
+    - name: "Oolong tea"
+      jan: 4973450160098
+      price: 70
+      cost: 61
+      divide: 1
+    - name: "Barley tea"
+      jan: 4973450127381
+      price: 70
+      cost: 61
+      divide: 1
+    - name: "Jasmine tea"
+      jan: 4973450127343
+      price: 70
+      cost: 61
+      divide: 1
+    - name: "Black tea"
+      jan: 4973450160050
+      price: 70
+      cost: 61
+      divide: 1
+    - name: "Black tea (with apple)"
+      jan: 4973450163976
+      price: 70
+      cost: 61
+      divide: 1
+
+- title: Juice
+  id: juice
+  goods:
+    - name: "Orange juice"
+      jan: 4908011703087
+      price: 70
+      cost: 60
+      divide: 1
+    - name: "Apple juice"
+      jan: 4908011703186
+      price: 70
+      cost: 60
+      divide: 1
+    - name: "Grape fruit juice"
+      jan: 4908011703384
+      price: 70
+      cost: 60
+      divide: 1
+    - name: "Pineapple juice"
+      jan: 4908011703483
+      price: 70
+      cost: 60
+      divide: 1
+    - name: "Peach juice"
+      jan: 4908011703582
+      price: 70
+      cost: 60
+      divide: 1
+    - name: "Qiwi fruit juice"
+      jan: 4908011705562
+      price: 70
+      cost: 60
+      divide: 1
+    - name: "Mango mix"
+      jan: 4908011705593
+      price: 70
+      cost: 60
+      divide: 1
+    - name: "Grape juice"
+      jan: 4908011703285
+      price: 70
+      cost: 60
+      divide: 1
+    - name: "Muscat mix"
+      jan: 4908011700574
+      price: 70
+      cost: 60
+      divide: 1
+
+- title: Other drinks
+  id: drink
+  goods:
+    - name: "Water (with gas)"
+      jan: 4973450117023
+      price: 70
+      cost: 61
+      divide: 1
+    - name: "Water (with gas and pear)"
+      jan: 4973450162900
+      price: 70
+      cost: 61
+      divide: 1
+    - name: "Water (with gas and pear)"
+      jan: 4973450162924
+      price: 70
+      cost: 61
+      divide: 1
+    - name: "Water (2L)"
+      jan: 4973450127558
+      price: 80
+      cost: 386
+      divide: 6
+    - name: "C1000 Vitamin Lemon"
+      jan: 4530503024525
+      price: 110
+      cost: 102
+      divide: 1
+    - name: "Lipovitan D"
+      jan: 4987306003019
+      price: 120
+      cost: 1077
+      divide: 10
+
+- title: Jelly
+  id: jelly
+  goods:
+    - name: "Peach Jelly"
+      jan: 4973450113513
+      price: 90
+      cost: 84
+      divide: 1
+    - name: "Mango Jelly"
+      jan: 4973450153342
+      price: 90
+      cost: 84
+      divide: 1
+
+- title: Icecream
+  id: icecream
+  goods:
+    - name: "Pino"
+      jan: 4902720076951
+      price: 110
+      cost: 98
+      divide: 1
+    - name: "Yukimi daifuku"
+      jan: 45116568
+      price: 110
+      cost: 98
+      divide: 1
+    - name: "Häagen-Dazs (vanilla)"
+      jan: 4976994205010
+      price: 200
+      cost: 183
+      divide: 1
+    - name: "Häagen-Dazs (strawberry)"
+      jan: 4976994205027
+      price: 200
+      cost: 183
+      divide: 1
+    - name: "Häagen-Dazs (green tea)"
+      jan: 4976994205034
+      price: 200
+      cost: 183
+      divide: 1
+    - name: "Häagen-Dazs (double cheesecake)"
+      jan: 4976994205737
+      price: 200
+      cost: 183
+      divide: 1
+    - name: "Häagen-Dazs (crisp chip chocolate)"
+      jan: 4976994205683
+      price: 200
+      cost: 183
+      divide: 1
+- title: Snack
+  id: snack
+  goods:
+    - name: "Marie"
+      jan: 4902888218811
+      price: 30
+      cost: 174
+      divide: 7
+    - name: "Choice"
+      jan: 4902888218828
+      price: 30
+      cost: 174
+      divide: 7
+    - name: "Moonlight"
+      jan: 4902888218835
+      price: 30
+      cost: 174
+      divide: 7
+    - name: "Koala's March"
+      jan: 4903333199655
+      price: 30
+      cost: 286
+      divide: 10
+    - name: "Bamboo shoots / mushroom mountain"
+      jan: 4902777026404
+      price: 30
+      cost: 275
+      divide: 12
+    - name: "Chips"
+      jan: 4973450160159
+      price: 80
+      cost: 70
+      divide: 1
+    - name: "Chips"
+      jan: 4973450160135
+      price: 80
+      cost: 70
+      divide: 1
+    - name: "Chips"
+      jan: 4973450161095
+      price: 80
+      cost: 70
+      divide: 1
+    - name: "Kaki no tane"
+      jan: 4973450163860
+      price: 30
+      cost: 170
+      divide: 6
+    - name: "Kaki no tane"
+      jan: 4973450163877
+      price: 30
+      cost: 170
+      divide: 6
+    - name: "Kaki no tane"
+      jan: 4973450163884
+      price: 30
+      cost: 170
+      divide: 6
+
+- title: Cup noodles
+  id: noodle
+  goods:
+    - name: "Midori No Tanuki"
+      jan: 4901990522748
+      price: 120
+      cost: 120
+      divide: 1
+    - name: "Akai Kitsune"
+      jan: 4901990522731
+      price: 120
+      cost: 120
+      divide: 1
+- title: Frozen food
+  id: frozen
+  goods:
+    - name: "Grotta Azzurra Genovese"
+      jan: 4902110372267
+      price: 230
+      cost: 205
+      divide: 1
+    - name: "Grotta Azzurra Carbonara"
+      jan: 4902110386387
+      price: 230
+      cost: 205
+      divide: 1
+    - name: "Grotta Azzurra Bolognese"
+      jan: 4902110354416
+      price: 230
+      cost: 205
+      divide: 1
+      
+- title: Charge
+  id: charge
+  goods:
+    - name: "1000 point"
+      jan: 1000yen
+      price: -1000
+      cost: -1000
+      divide: 1
+    - name: "500 point"
+      jan: 500yen
+      price: -500
+      cost: -500
+      divide: 1
+    - name: "100 point"
+      jan: 100yen
+      price: -100
+      cost: -100
+      divide: 1
+    - name: "50 point (guest use only)"
+      jan: 50yen
+      price: -50
+      cost: -50
+      divide: 1
+    - name: "10 point (guest use only)"
+      jan: 10yen
+      price: -10
+      cost: -10
+      divide: 1
