@@ -1,0 +1,64 @@
+{% extends "base.html" %}
+
+{% block content %}
+<main role="main" class="container">
+  <div class="d-flex align-items-center p-3 my-3 bg-purple rounded box-shadow">
+    <img class="mr-3" src="/static/okazakilab.svg" alt="Logo" width="64" height="64">
+    <div class="lh-100">
+      <h2 class="mb-0 lh-100">Welcome to Labshop!</h2>
+      Hi {{ user.name }}, your current balance is <strong>{{ user.point | int }}</strong> pts.
+    </div>
+  </div>
+
+  <div class="my-3 p-3 bg-white rounded box-shadow">
+    <h3 class="border-bottom border-gray pb-2 mb-0">Recent activities</h3>
+    {% for record in records %}
+    <div class="media text-muted pt-3">
+      <img src="/static/{{ record.jan}}.jpg" alt="" class="record-thumb mr-2 rounded">
+      <div class="media-body pb-3 mb-0 lh-125 border-bottom border-gray">
+        <div class="d-flex justify-content-between align-items-center w-100">
+          <strong class="d-block text-gray-dark">{{ record.timestamp }}</strong>
+          <button type="button" class="btn btn-outline-danger btn-sm" data-toggle="modal" data-target="#confirm-{{ record._id }}">Cancel</button>
+        </div>
+        <div class="d-flex justify-content-between align-items-center w-100">
+          <span>{{ record.item.name }}</span>
+          <strong class="text-gray-dark">{{ record.price | int }}</strong>
+        </div>
+      </div>
+    </div>
+
+    <!-- Modal dialog -->
+    <div class="modal fade" id="confirm-{{ record._id }}" tabindex="-1" role="dialog" aria-labelledby="exampleModalLongTitle" aria-hidden="true">
+      <div class="modal-dialog" role="document">
+        <div class="modal-content">
+          <div class="modal-header">
+            <h5 class="modal-title" id="exampleModalLongTitle">Confirmation</h5>
+            <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+              <span aria-hidden="true">&times;</span>
+            </button>
+          </div>
+          <div class="modal-body">
+            Are you sure to cancel this activity?
+
+            <div class="media text-muted pt-3">
+                <img src="/static/{{ record.jan}}.jpg" alt="" class="record-thumb mr-2 rounded">
+                <div class="media-body pb-3 mb-0 lh-125">
+                  <strong class="d-block text-gray-dark">{{ record.timestamp }}</strong>
+                  <div class="d-flex justify-content-between align-items-center w-100">
+                    <span>{{ record.item.name }}</span>
+                    <strong class="text-gray-dark">{{ record.price | int }}</strong>
+                  </div>
+                </div>
+              </div>
+            </div>
+          <div class="modal-footer">
+            <button type="button" class="btn btn-secondary" data-dismiss="modal">No</button>
+            <a href="/record_cancel/{{ record._id }}" type="button" class="btn btn-primary">Yes</a>
+          </div>
+        </div>
+      </div>
+    </div>
+    {% endfor %}
+  </div>
+</main>
+{% endblock %}
